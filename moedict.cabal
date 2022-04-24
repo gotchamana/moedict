@@ -1,0 +1,14 @@
+cabal-version: 2.4
+name: moedict
+version: 0.1.0.0
+
+author: shootingstar
+maintainer: jinhung.c@gmail.com
+
+executable moedict
+    main-is: Main.hs
+    other-modules: Types, Util
+    ghc-options: -Wall
+    build-depends: base ^>= 4.14.3.0, HTTP ^>= 4000.4.0, aeson ^>= 2.0.3.0, bytestring, network-uri, mtl
+    hs-source-dirs: app
+    default-language: Haskell2010
